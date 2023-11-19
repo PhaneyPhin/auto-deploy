@@ -14,7 +14,7 @@ app.post('/hooks/${app}', (req, res) => {
     const path = `/home/camindev/${req.body.path}`
     exec(path, (error, stdout, stderr) => {
         if (error) {
-            console.log(`error: ${error.message}`);
+            console.log(`error: ${error.message1}`);
             return;
         }
         if (stderr) {
